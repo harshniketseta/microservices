@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Microservices App</title>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+  <body> 
+    Result.    
+    <div id="results">
+      
+    </div>
+      <script>
+          function loadResults(){
+            $("#results").load("http://localhost:3001/results.js");
+          }
+
+          setInterval(loadResults, 20);
+          loadResults();
+      </script>
+    </div>
+  </body>
+</html>
